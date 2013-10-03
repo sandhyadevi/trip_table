@@ -1,0 +1,39 @@
+<% provide(:title, 'Trip Form') %>
+<h1>Trip Form</h1>
+
+
+  	<div class="span6 offset3">
+    	<%= form_for(@trip) do |f| %>
+
+    	
+    	
+      		<%= f.label :trip_id %>
+      		<%= f.text_field :trip_id %>
+
+      		<%= f.label :user_id %>
+      		<%= f.text_field :user_id %>
+
+      		<%= f.label :title %>
+      		<%= f.text_field :title %>
+
+      		<%= f.label :destination %>
+      		<%= f.text_field :destination %>
+      		
+      		<%= f.label :start_date %>
+      		<%= f.text_field :start_date %>
+      		
+      		<%= f.label :end_date %>
+      		<%= f.text_field :end_date %>
+      		
+      		<%= f.label :destination_lat %>
+      		<%= f.text_field :destination_lat %>
+      		
+      		<%= f.label :destination_lng %>
+      		<%= f.text_field :destination_lng %>
+      		
+      		
+
+      		<%= f.submit "Create trip", class: "btn btn-large btn-primary" %>
+    	<% end %>
+  	</div>
+</div>
